@@ -194,7 +194,7 @@ var myArr = ['bond', 007, function(){}, true];
 var dogs = [10, 50, 100, 200];
 var total = dogs[0] + dogs[1] + dogs[2] + dogs[3];
 console.log(total+" is the total number of dogs. ");
-
+lol
 
 
 
@@ -419,7 +419,8 @@ var weather = "Cloudy";
 var waves = 10;
 if ((weather === "sunny") && (waves === 10)) {
     console.log("pumped");
-{else if ((weather === "sunny") && (waves === 9, 8, 7, 6, 5)) {
+}
+if ((weather === "sunny") && (waves === 9, 8, 7, 6, 5)) {
     console.log("mellow");
 
 }else{
