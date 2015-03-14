@@ -80,7 +80,7 @@ var thatGuy = {
 		street: 'University',
 		city: 'Orlando',
 		cornerOf: ['University', 'Semoran']
-		return x;
+
 		
 		},
 		showMyAddress: function(){
@@ -93,7 +93,7 @@ var thatGuy = {
 	};
 	
 	console.log(thatGuy.showMyAddress());
-	console.log(x);
+
 
 //properties & methods
 /*
@@ -107,6 +107,17 @@ console.log('------Objects - properties & methods ----------');
 
 //Method 1 "Basic"
 
+var fsStudent = {}; // init var
+fsStudent.age = 22;
+fsStudent.career = "web dev";
+
+fsStudent.sayHello = function(){
+	console.log("hello");
+	
+	
+	};
+	
+
 
 
 
@@ -117,7 +128,8 @@ console.log('------Objects - properties & methods ----------');
 // we can also access the methods and properties of an object using  [ ] , 
 // 	by using their name as a string - all of the below are valid:
 
-
+console.log("method 1");
+	fsStudent.sayHello();
 
 /* ===============================================================
 	The for-in object loop
@@ -129,7 +141,18 @@ console.log('------Objects - properties & methods ----------');
 */
     console.log("---------- Object - For In Loop ----------------");
 
-
+var students = {
+	
+	name: "James bond",
+	gender: "male",
+	job: 'spy'
+	};
+	
+	for(var key in students){
+		console.log("key names: ", key);
+		console.log("value of the key[' ,key, ']: ", students[key]);
+		
+		}
 
 /*
 	===============================================
@@ -164,7 +187,9 @@ console.log('------Objects - properties & methods ----------');
 */
     console.log('------ Objects - Converting Datatypes ----------');
 
-
+var myNum = 1;
+	myString = String(myNum);
+	console.log(typeof myString);
 
 /*
 	- because these values act as objects, the data types also have methods and 
@@ -228,7 +253,8 @@ console.log('------------ DOCUMENT OBJECT MODEL -------------------');
 
 console.log('------------ getElementById -------------------');
 
-
+var playbox = document.getElementById('playbox');
+console.log(playbox);
 
 
 /*
@@ -241,8 +267,11 @@ console.log('------------ getElementById -------------------');
 
 console.log('------------ getElementsByTagName -------------------');
 
+var anchors = document.getElementsByTagName('a');
+console.log(anchors);
 
-
+console.log(anchors[1])
+;
 
 /*
 	==================================================================
@@ -257,6 +286,8 @@ console.log('------------ getElementsByTagName -------------------');
 
 console.log('------------ querySelectorAll -------------------');
 
+var nav = document.querySelectorAll(' #nav li');
+console.log(nav);
 
 
 
@@ -271,7 +302,8 @@ console.log('------------ querySelectorAll -------------------');
 */
     console.log('------------ querySelector -------------------');
 
-
+var nav2 = document.querySelector('#nav');
+console.log(nav2);
 
 
 
