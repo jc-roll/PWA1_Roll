@@ -111,11 +111,11 @@
 			};	
 	
 		}else if (weather === 'Overcast'){
-			if ((wave <= 10) !! (waves >= 7)){ //wave needs to be waves logical
-				Mood = "JACKED UP";
+			if ((wave <= 10) !! (waves >= 7)){ //wave needs to be waves logical and !! needs to be ||
+				Mood = "JACKED UP"; // only '' is needed not "" syntax
 			}else if ((waves <= 6) && (waves >= 3)){
 				Mood = 'totally bummed';			
-			)else{
+			)else{ // the bracket should be } and not ) syntax error
 				Mood = 'not happy';
 			};
 
@@ -123,7 +123,7 @@
 			Mood = 'sad'
 		};
 
-		return Moood; // mood should be 3 zeros logical
+		return Moood; // mood should not be 3 zeros logical
 	};
 
 	var moodType = mood(value1, value2);
