@@ -23,7 +23,32 @@ STUDENT ACTIVITY 1:
 console.log('------ STUDENT ACTIVITY 1 - ANSWERS BELOW ----------');
 
 // this is integrating multiple data types - object with an array of objects
-
+var	newCnt = 'studentCount';
+var schoolInfo = {
+	name: 'Full Sail',
+	address: "123 University Ave",
+	studentCount:16000,
+	students: {
+		name: "James Bond",
+		GPA: '3.9',
+		classes: ['PWA1', 'PWA2'],
+		
+		
+		
+		},
+		syntax: function(){
+			
+			var x = this.name + ',' + schoolInfo['name'];
+			return x;
+			
+		}
+			};
+			
+			var	newCnt = 'studentCount';
+	console.log(schoolInfo.syntax());
+	console.log(schoolInfo[newCnt]);
+	console.log(schoolInfo['address']);
+	console.log(schoolInfo.students.GPA + ',' + schoolInfo['students']['GPA']);
 
 
 /* ----------------------------------------------------------------------------
@@ -40,3 +65,23 @@ console.log('------ STUDENT ACTIVITY 1 - ANSWERS BELOW ----------');
 
 
 console.log('------ STUDENT ACTIVITY 2 - ANSWERS BELOW ----------');
+var schoolInfo = {
+	name: 'Full Sail',
+	address: "123 University Ave",
+	studentCount:16000,
+	students: {
+		name: "James Bond",
+		GPA: '3.9',
+		classes: ['PWA1', 'PWA2'],
+		
+		
+		
+		},
+		gradeAvg: function(x){
+			
+			var x = (this.studentCount * this.students.GPA)/this.studentCount;
+			return x;
+			
+		}
+			};
+			console.log(schoolInfo.gradeAvg());

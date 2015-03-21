@@ -328,7 +328,10 @@ console.log(nav2);
     */
     console.log('------------ TRAVERSAL -------------------');
 
-
+var apple = document.querySelectorAll(' #nav li a')[2];
+	console.log(apple);
+	console.log(apple.parentNode);
+	console.log(apple.parentNode.parentNode);
 
 
 /*
@@ -346,6 +349,21 @@ console.log(nav2);
 
         attr = href, src, class
 */
+	var navLinks = document.querySelectorAll('#nav li');
+	
+	for(i=0;i<navLinks.length;i++){
+		
+		var href = navLinks[i].firstChild.getAttribute('href');
+		
+			console.log('manipulation HREF:', href);
+			
+			//check all the classes
+			var aClass = navLinks[i].firstChild.getAttribute('class');
+			console.log('manipulation CLASS:', aClass);
+			
+		}
+	
+	
 
 
 
@@ -365,6 +383,19 @@ console.log(nav2);
 
 console.log('------------ Manipulating CSS Classes -------------------');
 
+navLinks[2].firstChild.setAttribute('class', 'navitem active');
+var changeClass = navLinks[1].firstChild.setAttribute('href', 'http://google.com');
+
+
+
+console.log('------------ Manipulating HTML Classes -------------------');
+
+var navLinks = document.querySelectorAll('#nav a');
+
+console.log(navLinks[2]);
+console.log(navLinks[2].innerHTML); //GETTER
+
+navLinks[2].innerHTML = 'This Link Rocks';
 
 /*
 	==================================================================
