@@ -8,7 +8,7 @@
 	;
 	
 	// Validates search query
-	var validate = function(query){
+	var validate = function(query){// had to add bracket
 		
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) = " "){
