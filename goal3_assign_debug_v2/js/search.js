@@ -8,7 +8,7 @@
 	;
 	
 	// Validates search query
-	var validate = function(query){// had to add bracket
+	var validate = function(query){// changed to validate and took one = away
 		
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) = " "){
@@ -31,7 +31,7 @@
 	};
 	
 	// Finds search matches
-	var search = function(query){
+	var search = function(query){// had to add this bracket{
 		
 		// split the user's search query string into an array
 		var queryArray = query.join("");
