@@ -37,7 +37,7 @@ info.button.addEventListener('click', clicked, false); // This grabs the info ne
 													   // the button was clicked
 var validation = function(){ //  this is my attempt at a large validation function...
 	playersGuess = parseInt (dom.imput.value);
-	
+	z
 	if(isNaN(playerGuess)){
 		output = "That is not a number. That was guess " + guessM + "." + " You have " +  guessR + " guesses left." + " pick a number between 1-10."
 		
