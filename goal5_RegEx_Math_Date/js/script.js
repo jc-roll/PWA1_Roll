@@ -163,7 +163,7 @@ STUDENT ACTIVITY
     console.log('------------ Date Methods -------------------');
 
  console.log(new Date());
- var d = new Date());
+ var d = new Date();
  console.log (d.getFullYear());
  
  console.log(d.getDate());
